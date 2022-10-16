@@ -1,0 +1,9 @@
+#build image using dockerfile in same folder
+    docker build -t [name:tag] .
+    
+#build image using dockerfile located in different folder
+    docker build -t [name:tag] -f [path/to/dockerfile]
+
+#tag existing image
+    docker tag [imageName] [name:tag]
+
