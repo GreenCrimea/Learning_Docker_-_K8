@@ -1,0 +1,14 @@
+#create new volume
+    docker volume create [volumeName]
+
+#list volumes
+    docker volume ls 
+
+#display volume info
+    docker volume inspect [volumeName]
+
+#delete volume 
+    docker volume rm [volumeName]
+
+#delete all unmounted volumes
+    docker volume prune
