@@ -1,0 +1,5 @@
+#pull and run nginx
+    dopcker run -d -p 8080:80 --name webserver nginx
+
+#attach to container   
+    docker container exec -it webserver bash

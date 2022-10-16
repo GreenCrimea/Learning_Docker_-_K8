@@ -1,0 +1,60 @@
+#display docker info
+    docker info
+
+#display system version
+    docker version
+
+#log into docker hub
+    docker login
+
+---
+
+#pull image from registry
+    docker pull [imageName]
+
+#run container
+    docker run [imageName]
+
+#run container in detached mode
+    docker run -d [imageName]
+
+#start stopped container
+    docker start [containerName]
+
+#list running containers
+    docker ps
+
+#list running and stopped containers
+    docker ps -a
+
+#stop containers   
+    docker stop [containerName]
+
+#kill containers
+    docker kill [containerName]
+
+#get image info
+    docker image inspect [imageName]
+
+---
+
+#pull and run an nginx server
+    docker run --publish 80:80 --name webserver nginx
+
+#attach shell
+    docker run -it nginx -- /bin/bash
+
+#remove stopped container
+    docker rm [containerName]
+
+#remove all stopped
+    docker rm $(docker ps -a -q)
+
+#list images
+    docker images
+
+#delete image
+    docker rmi [imageName]
+
+#remove all images not in containers
+    docker system prune -a
